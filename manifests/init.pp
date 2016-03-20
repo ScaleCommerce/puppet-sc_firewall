@@ -1,13 +1,11 @@
 class sc_firewall(
   $host_ext_services = {},
   $host_trusted_services = {},
+  $purgeall = true,
 ) {
 
-#  package {'iptables-persistent':
-#    ensure => installed,
-#  }
   resources { 'firewall':
-    purge => true,
+    purge => $purgeall,
   }
   class {'sc_firewall::pre':
   }->

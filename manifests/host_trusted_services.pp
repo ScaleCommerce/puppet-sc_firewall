@@ -1,6 +1,7 @@
 class sc_firewall::host_trusted_services(
-  $host_trusted_services = [],
 ) {
+
+  $host_trusted_services = hiery_array('sc_firewall::host_trusted_services',[])
 
   each($host_trusted_services) |$rule| {
 

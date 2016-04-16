@@ -1,7 +1,7 @@
 class sc_firewall::host_ext_services(
-  $host_ext_services = [],
 ) {
 
+  $host_ext_services = hiery_array('sc_firewall::host_ext_services',[])
   each($host_ext_services) |$rule| {
 
       $rule_parts = split($rule, ',')

@@ -1,0 +1,8 @@
+stages:
+   - push2github
+
+
+push2github:
+  stage: push2github
+  script:
+    - git push --quiet --mirror https://$GITHUB_TOKEN@github.com/ScaleCommerce/puppet-sc_firewall.git

@@ -1,0 +1,14 @@
+{
+  "name": "scalecommerce-sc_fireall",
+  "version": "0.1.0",
+  "author": "scalecommerce",
+  "summary": "Puppet module to manage firwall",
+  "license": "Apache 2.0",
+  "source": "https://github.com/ScaleCommerce/puppet-sc_firewall.git",
+  "project_page": "https://github.com/ScaleCommerce/puppet-sc_firewall",
+  "issues_url": "https://github.com/ScaleCommerce/puppet-sc_firewall/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"},
+    {"name":"puppetlabs-firewall","version_requirement":">= 1.0.0"}
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "name": "scalecommerce-sc_fireall",
+  "name": "scalecommerce-sc_firewall",
   "version": "0.1.0",
   "author": "scalecommerce",
   "summary": "Puppet module to manage firwall",

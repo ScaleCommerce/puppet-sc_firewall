@@ -1,3 +1,6 @@
+variables:
+  GIT_STRATEGY: clone
+
 stages:
    - push2github
 
@@ -7,4 +10,4 @@ push2github:
   tags:
     - dind
   script:
-    - git push -f --quiet --mirror https://$GITHUB_TOKEN@github.com/ScaleCommerce/puppet-sc_firewall.git
+    - git push --quiet --mirror https://$GITHUB_TOKEN@github.com/ScaleCommerce/puppet-sc_firewall.git

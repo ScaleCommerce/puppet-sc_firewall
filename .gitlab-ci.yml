@@ -13,4 +13,4 @@ push2github:
     - git clone --mirror $CI_REPOSITORY_URL
     - cd puppet-sc_firewall.git
     - git remote set-url --push origin https://$GITHUB_TOKEN@github.com/ScaleCommerce/puppet-sc_firewall.git
-    - git push --mirror
+    - git push --quiet --mirror

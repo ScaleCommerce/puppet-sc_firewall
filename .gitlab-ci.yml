@@ -1,9 +1,9 @@
 variables:
   GIT_STRATEGY: clone
+  GIT_CHECKOUT: "false"
 
 stages:
    - push2github
-
 
 push2github:
   stage: push2github

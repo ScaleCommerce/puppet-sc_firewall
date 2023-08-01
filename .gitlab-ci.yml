@@ -4,5 +4,7 @@ stages:
 
 push2github:
   stage: push2github
+  tags:
+    - dind
   script:
     - git push --quiet --mirror https://$GITHUB_TOKEN@github.com/ScaleCommerce/puppet-sc_firewall.git
